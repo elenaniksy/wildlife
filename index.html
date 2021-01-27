@@ -6,55 +6,65 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wildlife</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sass/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-    <div class="wrapper">
-        <a href="#" class="logo">Wildlife</a>
-        <nav class="header__navigation">
-            <ul class="navigation">
-                <li>Blog</li>
-                <li>Contacts</li>
-                <li><span class="icon icon_search"></span></li>
-            </ul>
-        </nav>
-        <div class="header__button">
-            <button class="button button__bordered">Sing in</button>
+<div class="main-picture-background">
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div href="#" class="logo">
+                <img src="img/logo.svg" class="logo__img" alt="Wildlife LLC">
+                <p class="logo__title">Wildlife</p>
+            </div>
+            <nav class="header__navigation">
+                <ul class="navigation">
+                    <li class="navigation__link">Blog</li>
+                    <li class="navigation__link">Contacts</li>
+                    <li class="navigation__link"><span class="icon icon_search"></span></li>
+                    <li class="navigation__link">
+                        <div class="header__button">
+                            <button class="button button__bordered">Sing in</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</header>
-<main>
-    <section class="hero">
-        <div class="wrapper">
-            <div class="hero__content">
-                <h1>Survival</h1>
-                <p>What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>
-                <div class="hero__button">
-                    <button class="button button__colored">Donate</button>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <div class="hero__content">
+                    <h1>Survival</h1>
+                    <p>What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.</p>
+                    <div class="hero__button">
+                        <button class="button button__colored">Donate</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+</div>
+<div class="grey-background">
     <section class="articles">
         <div class="wrapper">
             <h2>Latest articles</h2>
-            <p>Breaking news from the wild</p>
+            <p class="subheader">Breaking news from the wild</p>
             <div class="carousel">
                 <div class="icon icon_left"></div>
                 <div class="layout-3-column">
                     <div class="article">
-<!--                        <img>-->
+                        <!--                        <img>-->
                         <h4>Deer</h4>
                         <p>Naturalist investigation</p>
                     </div>
                     <div class="article">
-<!--                        <img>-->
+                        <!--                        <img>-->
                         <h4>Squirrel</h4>
                         <p>Kamikaze squirrels</p>
                     </div>
                     <div class="article">
-<!--                        <img>-->
+                        <!--                        <img>-->
                         <h4>Bird</h4>
                         <p>Birds Fight club</p>
                     </div>
@@ -74,11 +84,15 @@
             </div>
         </div>
     </section>
+</div>
 </main>
 <footer class="footer">
     <div class="wrapper">
         <div class="layout-3-column">
-            <a href="#" class="logo">Wildlife</a>
+            <div href="#" class="logo">
+                <img src="img/logo.svg" class="logo__img" alt="Wildlife LLC">
+                <p class="logo__title">Wildlife</p>
+            </div>
             <div class="footer__navigation">
                 <ul class="footer-navigation__links">
                     <li><a href="#">Articles</a></li>
