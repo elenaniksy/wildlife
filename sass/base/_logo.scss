@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__title {
+  @extend %font-secondary;
+  @include font($size: 3.2rem, $height: 60px, $align: left);
+  text-transform: uppercase;
+  color: $font-light;
+  margin: 0 0 0 15px;
+}

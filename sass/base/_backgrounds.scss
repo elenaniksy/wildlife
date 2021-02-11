@@ -1,8 +1,9 @@
 .main-picture-background {
-  background-color: $background-dark;
-  background-image: url("img/backgrounds/background-hero.png");
+  background-image: url("https://i.postimg.cc/nLNNdnDy/background-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $background-dark;
+  height: 100vh;
 }
 .grey-background {
   background-color: $background-grey;

@@ -1,0 +1,18 @@
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 276px;
+  margin-top: 120px;
+}
+
+.hero__title {
+  margin: 2px 0 51px 0;
+}
+
+.hero__text {
+  color: $font-light;
+  @include font($size: 1.8rem, $height: 27px, $align: left);
+  @extend %font-add;
+  margin: 0 0 49px 0;
+}

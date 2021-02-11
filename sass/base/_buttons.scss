@@ -1,43 +1,33 @@
 .button {
-  font-family: Roboto, sans-serif;
-  font-size: 2.3rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.7rem;
-  letter-spacing: 0;
-  text-align: center;
+  @extend %font-secondary;
+  @include font($size: 2.3rem, $height: 2.7rem,);
   cursor: pointer;
   border-radius: 5px;
-  transition: all .3s;
-}
+  @extend %transition;
 
-.button__bordered {
-  border: 2px solid $orange-main;
-  background: none;
-  color: $font-light;
-  padding: 2px 23px;
-}
+  &__bordered {
+    border: 2px solid $orange-main;
+    background: none;
+    color: $font-light;
+    padding: 9px 25px 10px 25px;
+    &:hover {
+      background-color: $orange-main;
+    }
+    &:active {
+      background-color: $orange-dark;
+    }
+  }
 
-.button__colored {
-  background-color: $orange-main;
-  color: $font-light;
-  border: none;
-  padding: 16px 42px;
+  &__colored {
+    background-color: $orange-main;
+    color: $font-light;
+    border: none;
+    padding: 17px 43px;
+    &:hover {
+      background-color: $orange-light;
+    }
+    &:active {
+      background-color: $orange-dark;
+    }
+  }
 }
-
-.button__colored:hover {
-  background-color: $orange-light;
-}
-
-.button__colored:active {
-  background-color: $orange-dark;
-}
-
-.button__bordered:hover {
-  background-color: $orange-main;
-}
-
-.button__bordered:active {
-  background-color: $orange-dark;
-}
-

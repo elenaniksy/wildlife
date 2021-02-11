@@ -1,14 +1,23 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+//Abstract
 @import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixins";
 
 //Base
 @import "base/base";
+@import "base/backgrounds";
 @import "base/buttons";
+@import "base/logo";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 
 //Components
-@import "components/logo";
-@import "components/backgrounds";
+@import "components/navigation";
+@import "components/hero";
+@import "components/articles";
 @import "components/contact-us";

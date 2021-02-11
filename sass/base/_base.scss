@@ -4,51 +4,32 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Open-Sans, sans-serif;
+  max-width: $screen-width;
+  @extend %font-add;
 }
 
 h1 {
-  font-size: 4.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 72px;
-  letter-spacing: 2px;
-  text-align: left;
   color: $orange-main;
+  @include font($size: 4.8rem, $height: 7.2rem, $spacing: 2px, $align: left);
 }
 
 h2 {
-  font-size: 4.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 72px;
-  letter-spacing: 0;
-  text-align: center;
+  color: $font-dark;
+  @include font($size: 4.8rem, $height: 7.2rem);
 }
 
 h3 {
-  font-size: 27px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 41px;
-  letter-spacing: 0;
-  text-align: center;
+  @include font($size: 2.7rem, $height: 4.1rem);
 }
 
 h4 {
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0;
-  text-align: center;
+  @include font($size: 2.2rem, $height: 3.6rem);
 }
 
 .subheader {
-  font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0;
-  text-align: center;
+  @include font($size: 2.4rem, $height: 3.6rem);
+}
+
+a {
+  text-decoration: none;
 }
