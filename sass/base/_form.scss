@@ -1,0 +1,26 @@
+.contact-us__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 59px 0 0 0;
+}
+
+.contact-us__line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $font-grey;
+  width: 661px;
+  & input {
+    background-color: $background-grey;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    @extend %font-secondary;
+    @include font($size: 2.3rem, $height: 2.7rem, $align: left);
+  }
+  & button {
+    float: right;
+  }
+}

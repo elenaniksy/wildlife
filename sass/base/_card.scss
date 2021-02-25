@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin: 0 30px;
+  &__text-content{
+    position: absolute;
+    padding: 0 57px 40px 57px;
+  }
+  &__img{
+    position: relative;
+  }
+  &__title {
+    color: $font-light;
+    @include font($size: 2.2rem, $height: 3.6rem);
+  }
+  &__text {
+    color: $font-light;
+    @include font($size: 1.7rem, $height:2.7rem);
+    padding: 10px 0 0 0;
+  }
+  &:hover {
+    box-shadow: 0 10px 20px -.5px rgba(0, 0, 0, .2);
+  }
+}

@@ -1,10 +1,9 @@
 .main-picture-background {
-  background-image: url("https://i.postimg.cc/nLNNdnDy/background-hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include background($url: "../img/backgrounds/background_hero.jpg");
   background-color: $background-dark;
-  height: 100vh;
 }
-.grey-background {
-  background-color: $background-grey;
+
+.footer__background {
+  @include background($url: "../img/backgrounds/background-footer.jpg");
+  background-color: $background-dark;
 }

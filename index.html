@@ -15,18 +15,19 @@
     <header class="header">
         <div class="wrapper header__wrapper">
             <a href="#" class="logo">
-                <object type="image/svg+xml" data="./img/logo.svg" class="svg-object"></object>
+                <object type="image/svg+xml" data="./img/logo.svg" class="logo__object"></object>
                 <p class="logo__title">Wildlife</p>
             </a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__link">Blog</li>
-                    <li class="navigation__link">Contacts</li>
-                    <li
-                            class="navigation__link"><span
-                            class="icon icon_search"><object type="image/svg+xml"
-                                                             data="./img/navigation_icon/Vector.svg"
-                                                             class="svg-object"></object></span></li>
+                    <li class="navigation__link nav__item">Blog</li>
+                    <li class="navigation__link nav__item">Contacts</li>
+                    <li class="navigation__link nav__item">
+                        <span class="icon icon_search">
+                            <object type="image/svg+xml" data="./img/navigation_icon/Vector.svg" class="icon__object">
+                            </object>
+                        </span>
+                    </li>
                     <li class="navigation__link">
                         <div class="header__button">
                             <button class="button button__bordered">Sign in</button>
@@ -36,7 +37,7 @@
             </nav>
         </div>
     </header>
-        <section class="hero">
+    <section class="hero">
             <div class="wrapper">
                 <div class="hero__content">
                     <h1 class="hero__title">Survival</h1>
@@ -51,31 +52,42 @@
             </div>
         </section>
 </div>
-<div class="grey-background">
-    <section class="articles">
+    <section class="articles grey-background">
         <div class="wrapper">
             <h2>Latest articles</h2>
-            <p class="subheader">Breaking news from the wild</p>
+            <p class="articles__text">Breaking news from the wild</p>
             <div class="carousel">
-                <div class="icon icon_left"></div>
+                <span class="icon icon_left">
+                    <object type="image/svg+xml" data="img/carousel-images/arrays/left.svg">
+                    </object>
+                </span>
                 <div class="layout-3-column">
-                    <div class="article">
-                        <!--                        <img>-->
-                        <h4>Deer</h4>
-                        <p>Naturalist investigation</p>
+                    <div class="card">
+                        <img class="card__img" src="img/carousel-images/deer.jpg" alt="Deer">
+                        <div class="card__text-content">
+                            <h4 class="card__title">Deer</h4>
+                            <p class="card__text">Naturalist investigation</p>
+                        </div>
                     </div>
-                    <div class="article">
-                        <!--                        <img>-->
-                        <h4>Squirrel</h4>
-                        <p>Kamikaze squirrels</p>
+                    <div class="card">
+                        <img class="card__img" src="img/carousel-images/squirrel.jpg" alt="Squirrel">
+                        <div class="card__text-content">
+                            <h4 class="card__title">Squirrel</h4>
+                            <p class="card__text">Kamikaze squirrels</p>
+                        </div>
                     </div>
-                    <div class="article">
-                        <!--                        <img>-->
-                        <h4>Bird</h4>
-                        <p>Birds Fight club</p>
+                    <div class="card">
+                        <img class="card__img" src="img/carousel-images/bird.jpg" alt="Bird">
+                        <div class="card__text-content">
+                            <h4 class="card__title">Bird</h4>
+                            <p class="card__text">Birds Fight club</p>
+                        </div>
                     </div>
                 </div>
-                <span class="icon icon__right"></span>
+                <span class="icon icon__right">
+                    <object type="image/svg+xml"
+                                                       data="img/carousel-images/arrays/right.svg"></object>
+                </span>
             </div>
         </div>
     </section>
@@ -84,31 +96,43 @@
             <h3>Get notified about new amazing articles</h3>
             <div class="contact-us__form">
                 <form action method="post">
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <button class="button button__colored" type="submit">Send</button>
+                    <div class="contact-us__line">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <button class="button button__colored button__contact" type="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
-</div>
-<footer class="footer">
+<footer class="footer footer__background">
     <div class="wrapper">
         <div class="layout-3-column">
-            <a href="#" class="logo">
-                <img src="img/logo.svg" class="logo__img" alt="Wildlife LLC">
+            <a href="#" class="logo footer__logo">
+                <object type="image/svg+xml" data="./img/logo.svg" class="logo__object">
+                    Your browser does not support SVG
+                </object>
                 <p class="logo__title">Wildlife</p>
             </a>
             <div class="footer__navigation">
                 <ul class="footer-navigation__links">
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Learn more</a></li>
+                    <li class="footer-navigation__item"><a href="#">Articles</a></li>
+                    <li class="footer-navigation__item"><a href="#">About us</a></li>
+                    <li class="footer-navigation__item"><a href="#">Learn more</a></li>
                 </ul>
             </div>
             <div class="footer__icons">
-                <span class="icon icon__contacts"></span>
-                <span class="icon icon__contacts"></span>
-                <span class="icon icon__contacts"></span>
+                <span class="icon icon__contacts">
+                    <object type="image/svg+xml" data="img/social-media/facebook.svg"></object>
+                </span>
+                <span class="icon icon__contacts">
+                    <object type="image/svg+xml" data="img/social-media/instagram.svg"></object>
+                </span>
+                <span class="icon icon__contacts">
+                    <object type="image/svg+xml" data="img/social-media/pinterest.svg"></object>
+                </span>
+                <span class="icon icon__contacts">
+                    <object type="image/svg+xml" data="img/social-media/telegram.svg"></object>
+                </span>
             </div>
         </div>
     </div>

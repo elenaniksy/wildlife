@@ -5,8 +5,12 @@
 
 .logo__title {
   @extend %font-secondary;
+  @extend %transition;
   @include font($size: 3.2rem, $height: 60px, $align: left);
   text-transform: uppercase;
   color: $font-light;
   margin: 0 0 0 15px;
+  &:hover {
+    color: $orange-light;
+  }
 }

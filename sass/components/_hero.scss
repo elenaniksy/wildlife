@@ -1,9 +1,10 @@
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 276px;
   margin-top: 120px;
+  padding-bottom: 240px;
 }
 
 .hero__title {
@@ -12,7 +13,7 @@
 
 .hero__text {
   color: $font-light;
-  @include font($size: 1.8rem, $height: 27px, $align: left);
+  @include font($size: 1.9rem, $height: 27px, $align: left);
   @extend %font-add;
   margin: 0 0 49px 0;
 }

@@ -4,12 +4,14 @@
 }
 
 .navigation__link {
-  list-style: none;
   cursor: pointer;
-  padding: 0 30px;
   @include font($size: 2.3rem, $height: 6rem);
   @extend %transition;
   &:hover {
     color: $orange-light;
   }
+}
+
+.nav__item {
+  padding: 0 65px 0 0;
 }

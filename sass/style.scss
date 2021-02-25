@@ -1,3 +1,4 @@
+//Normalize SCSS
 @import "../node_modules/normalize-scss/sass/normalize";
 @include normalize();
 
@@ -11,13 +12,19 @@
 @import "base/backgrounds";
 @import "base/buttons";
 @import "base/logo";
+@import "base/icons";
+@import "base/card";
+@import "base/form";
 
 //Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
+@import "layouts/columns";
 
 //Components
 @import "components/navigation";
 @import "components/hero";
 @import "components/articles";
+@import "components/carousel";
 @import "components/contact-us";
+@import "layouts/footer";

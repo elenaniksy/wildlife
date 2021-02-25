@@ -1,0 +1,23 @@
+.icon {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.icon-svg {
+  &:hover {
+    .icon-path {
+      fill: $orange-light;
+    }
+  }
+}
+
+.social-icon-svg {
+  &:hover {
+    .social-icon-path-fill {
+      fill: $orange-light;
+    }
+    .social-icon-path-logo {
+      fill: $font-light;
+    }
+  }
+}

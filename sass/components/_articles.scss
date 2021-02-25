@@ -1,3 +1,10 @@
 .articles {
+  background-color: $background-grey;
   padding: 120px 0 0 0;
+}
+
+.articles__text {
+  color: $font-grey;
+  @include font($size: 2.5rem, $height: 3.6rem);
+  padding: 20px 0 120px 0;
 }

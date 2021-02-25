@@ -1,0 +1,38 @@
+.footer {
+  padding: 150px 0;
+  color: $font-light;
+
+  &__logo {
+    flex-basis: 20%;
+  }
+
+  &__navigation {
+    flex-basis: 40%;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 20%;
+  }
+}
+
+.footer-navigation {
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    @include font($size: 2.3rem, $height: 6rem);
+  }
+
+  &__item a{
+    color: $font-light;
+    @extend %transition;
+    &:hover {
+      color: $orange-light;
+    }
+  }
+
+}
+
