@@ -1,8 +1,46 @@
 .icon {
   cursor: pointer;
   display: inline-block;
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
 }
 
+.facebook {
+  background-image: url('../img/social-media/facebook.svg');
+  @extend %transition;
+  &:hover{
+    background-image: url('../img/social-media/facebook_hover.svg');
+  }
+}
+
+.instagram {
+  background-image: url('../img/social-media/instagram.svg');
+  @extend %transition;
+  &:hover{
+    background-image: url('../img/social-media/instagram_hover.svg');
+  }
+}
+
+.pinterest {
+  background-image: url('../img/social-media/pinterest.svg');
+  @extend %transition;
+  &:hover{
+    background-image: url('../img/social-media/pinterest_hover.svg');
+  }
+}
+
+.telegram {
+  background-image: url('../img/social-media/telegram.svg');
+  @extend %transition;
+  &:hover{
+    background-image: url('../img/social-media/telegram_hover.svg');
+  }
+}
+
+//hovers for arrays in block article
 .icon-svg {
   &:hover {
     .icon-path {
@@ -11,6 +49,7 @@
   }
 }
 
+//hovers for footer social media icons
 .social-icon-svg {
   &:hover {
     .social-icon-path-fill {

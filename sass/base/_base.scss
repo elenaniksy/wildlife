@@ -24,7 +24,9 @@ h3 {
 }
 
 a {
+  color: $font-light;
   text-decoration: none;
+  @extend %transition;
 }
 
 li {

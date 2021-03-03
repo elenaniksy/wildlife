@@ -407,13 +407,13 @@ template {
 [hidden] {
   display: none; }
 
-.button, .logo__title, .navigation__link, .footer-navigation__item a {
+a, .button, .input, .logo__title, .facebook, .instagram, .pinterest, .telegram, .navigation__link, .footer-navigation__item a {
   transition: all .3s ease-out; }
 
 body, .hero__text {
   font-family: Open-Sans, sans-serif; }
 
-.button, .logo__title, .contact-us__line input {
+.button, .input, .logo__title, .contact-us__line .input {
   font-family: Roboto, sans-serif; }
 
 html {
@@ -451,6 +451,7 @@ h3 {
   text-align: center; }
 
 a {
+  color: #F7F7F7;
   text-decoration: none; }
 
 li {
@@ -468,7 +469,7 @@ li {
   background-size: cover;
   background-color: #02160b; }
 
-.button {
+.button, .input {
   font-size: 2.3rem;
   font-style: normal;
   font-weight: 400;
@@ -477,25 +478,25 @@ li {
   text-align: center;
   cursor: pointer;
   border-radius: 5px; }
-  .button__bordered {
+  .button__bordered, .input__bordered {
     border: 2px solid #CD6326;
     background: none;
     color: #F7F7F7;
     padding: 9px 25px 10px 25px; }
-    .button__bordered:hover {
+    .button__bordered:hover, .input__bordered:hover {
       background-color: #CD6326; }
-    .button__bordered:active {
+    .button__bordered:active, .input__bordered:active {
       background-color: #8F5613; }
-  .button__colored {
+  .button__colored, .input__colored {
     background-color: #CD6326;
     color: #F7F7F7;
     border: none;
     padding: 17px 43px; }
-    .button__colored:hover {
+    .button__colored:hover, .input__colored:hover {
       background-color: #E39128; }
-    .button__colored:active {
+    .button__colored:active, .input__colored:active {
       background-color: #8F5613; }
-  .button__contact {
+  .button__contact, .input__contact {
     border-radius: 0 5px 5px 0;
     padding: 17px 34px; }
 
@@ -519,6 +520,30 @@ li {
 .icon {
   cursor: pointer;
   display: inline-block; }
+  .icon__link {
+    display: block;
+    width: 40px;
+    height: 40px; }
+
+.facebook {
+  background-image: url("../img/social-media/facebook.svg"); }
+  .facebook:hover {
+    background-image: url("../img/social-media/facebook_hover.svg"); }
+
+.instagram {
+  background-image: url("../img/social-media/instagram.svg"); }
+  .instagram:hover {
+    background-image: url("../img/social-media/instagram_hover.svg"); }
+
+.pinterest {
+  background-image: url("../img/social-media/pinterest.svg"); }
+  .pinterest:hover {
+    background-image: url("../img/social-media/pinterest_hover.svg"); }
+
+.telegram {
+  background-image: url("../img/social-media/telegram.svg"); }
+  .telegram:hover {
+    background-image: url("../img/social-media/telegram_hover.svg"); }
 
 .icon-svg:hover .icon-path {
   fill: #E39128; }
@@ -574,7 +599,7 @@ li {
   justify-content: space-between;
   border: 1px solid #666666;
   width: 661px; }
-  .contact-us__line input {
+  .contact-us__line .input {
     background-color: #CCCCCC;
     border: none;
     width: 100%;
@@ -620,7 +645,7 @@ li {
   line-height: 6rem;
   letter-spacing: 0;
   text-align: center; }
-  .navigation__link:hover {
+  .navigation__link a:hover {
     color: #E39128; }
 
 .nav__item {

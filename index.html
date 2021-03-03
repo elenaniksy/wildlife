@@ -20,18 +20,20 @@
             </a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__link nav__item">Blog</li>
-                    <li class="navigation__link nav__item">Contacts</li>
+                    <li class="navigation__link nav__item"><a href="#">Blog</a></li>
+                    <li class="navigation__link nav__item"><a href="#">Contacts</a></li>
                     <li class="navigation__link nav__item">
-                        <span class="icon icon_search">
+                        <a href="#">
+                              <span class="icon icon_search">
                             <object type="image/svg+xml" data="./img/navigation_icon/Vector.svg" class="icon__object">
                             </object>
                         </span>
+                        </a>
                     </li>
                     <li class="navigation__link">
-                        <div class="header__button">
-                            <button class="button button__bordered">Sign in</button>
-                        </div>
+                        <a href="#" class="header__button">
+                            <button type="submit" class="button button__bordered">Sign in</button>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -97,8 +99,8 @@
             <div class="contact-us__form">
                 <form action method="post">
                     <div class="contact-us__line">
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                        <button class="button button__colored button__contact" type="submit">Send</button>
+                        <input class ="input" type="text" name="email" id="email" placeholder="Email" required>
+                        <input class="button button__colored button__contact" type="submit" value="Send">
                     </div>
                 </form>
             </div>
@@ -120,20 +122,23 @@
                     <li class="footer-navigation__item"><a href="#">Learn more</a></li>
                 </ul>
             </div>
-            <div class="footer__icons">
-                <span class="icon icon__contacts">
-                    <object type="image/svg+xml" data="img/social-media/facebook.svg"></object>
-                </span>
-                <span class="icon icon__contacts">
-                    <object type="image/svg+xml" data="img/social-media/instagram.svg"></object>
-                </span>
-                <span class="icon icon__contacts">
-                    <object type="image/svg+xml" data="img/social-media/pinterest.svg"></object>
-                </span>
-                <span class="icon icon__contacts">
-                    <object type="image/svg+xml" data="img/social-media/telegram.svg"></object>
-                </span>
-            </div>
+            <ul class="footer__icons">
+                    <li class="icon icon__contacts facebook">
+                        <a class="icon__link" href="#"></a>
+                    </li>
+                    <li class="icon icon__contacts instagram">
+                        <a class="icon__link" href="#">
+                        </a>
+                    </li>
+                    <li class="icon icon__contacts pinterest">
+                        <a class="icon__link" href="#">
+                        </a>
+                    </li>
+                    <li class="icon icon__contacts telegram">
+                        <a class="icon__link" href="#">
+                        </a>
+                    </li>
+                </ul>
         </div>
     </div>
 </footer>

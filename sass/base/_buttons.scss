@@ -1,4 +1,4 @@
-.button {
+.button, .input {
   @extend %font-secondary;
   @include font($size: 2.3rem, $height: 2.7rem,);
   cursor: pointer;
